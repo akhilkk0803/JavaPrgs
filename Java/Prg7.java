@@ -9,7 +9,7 @@ int b=input.nextInt();
  int  ans=a/b;
  System.out.println(ans);
  }
-   catch(Exception e ){
+   catch(AirthmeticException e ){
      System.out.println("Divide by zero error");
    }
 
