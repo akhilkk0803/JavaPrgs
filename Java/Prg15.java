@@ -5,6 +5,7 @@ public class Main
 		Scanner input=new Scanner(System.in);
 		String s=input.nextLine();
 		String search=input.next();
+		int count=0;
 		int index=s.indexOf(search);
 		while(index!=-1){
 			count++;
