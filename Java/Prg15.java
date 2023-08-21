@@ -5,7 +5,11 @@ public class Main
 		Scanner input=new Scanner(System.in);
 		String s=input.nextLine();
 		String search=input.next();
-		int ind=s.indexOf(search);
-		System.out.println(ind);
+		int index=s.indexOf(search);
+		while(index!=-1){
+			count++;
+			index=s.indexOf(search,index+1);
+		}
+		System.out.println(search+" appeared "+count+" times");
 	}
 }
