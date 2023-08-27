@@ -13,13 +13,17 @@ public class Main
 		String s=input.nextLine();
 		String []words=s.split(" ");
 		String temp=" ";
-		for(String x:words){
-		    String rev="";
-		    for(int i=0;i<x.length();i++){
-		        rev=x.charAt(i)+rev;
-		    }
-		    temp=temp+" "+rev;
-		}
-		System.out.println(temp);
+		// for(String x:words){
+		//     String rev="";
+		//     for(int i=0;i<x.length();i++){
+		//         rev=x.charAt(i)+rev;
+		//     }
+		//     temp=temp+" "+rev;
+		// }
+		// System.out.println(temp);
+	for(String x:words){
+	    temp=x+" "+temp;
+	}
+	System.out.print(temp);
 	}
 }
